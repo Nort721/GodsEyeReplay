@@ -4,7 +4,6 @@ api-version: 1.13
 main: com.nort721.replay.GEReplay
 author: Nort721
 description: Records players that trigger GodsEye alerts
-website: https://www.spigotmc.org/resources/godseye-anticheat-advanced-detection.69595/
 depend: [ GodsEye ]
 softdepend: [ AdvancedReplay, ShadowSnap  ]
 
