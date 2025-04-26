@@ -1,0 +1,3 @@
+godseye:
+  on-alert:
+    recording_length_seconds: 20

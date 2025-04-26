@@ -1,0 +1,15 @@
+name: GodsEyeReplay
+version: ${project.version}
+api-version: 1.13
+main: com.nort721.replay.GEReplay
+author: Nort721
+description: Records players that trigger GodsEye alerts
+website: https://www.spigotmc.org/resources/godseye-anticheat-advanced-detection.69595/
+depend: [ GodsEye ]
+softdepend: [ PlaceholderAPI, AdvancedReplay, ShadowSnap  ]
+
+commands:
+  gereplay:
+    description: Base command
+    usage: /<command> help
+    aliases: [ gr ]
