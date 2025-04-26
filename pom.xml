@@ -15,7 +15,7 @@
     </properties>
 
     <name>GodsEyeReplay</name>
-
+    
     <packaging>jar</packaging>
 
     <build>
@@ -60,11 +60,6 @@
         </resources>
     </build>
 
-    <!--    <properties>-->
-    <!--        <maven.compiler.source>15</maven.compiler.source>-->
-    <!--        <maven.compiler.target>15</maven.compiler.target>-->
-    <!--    </properties>-->
-
     <repositories>
 
         <!--SpigotAPI-->
@@ -88,19 +83,19 @@
 
     <dependencies>
 
-        <!--Lombok-->
+        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.22</version>
+            <version>1.18.38</version>
             <scope>provided</scope>
         </dependency>
 
-        <!--SpigotAPI latest-->
+        <!--This adds the Spigot API artifact to the build -->
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
-            <version>1.16.5-R0.1-SNAPSHOT</version>
+            <version>1.21.5-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
 
