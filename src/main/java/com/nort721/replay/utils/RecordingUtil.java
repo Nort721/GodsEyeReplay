@@ -16,7 +16,7 @@ import java.util.concurrent.ConcurrentHashMap;
 @UtilityClass
 public class RecordingUtil {
 
-    private static final DateTimeFormatter FORMATTER = DateTimeFormatter.ofPattern("dd/MM/yyyy:HH:mm");
+    private static final DateTimeFormatter FORMATTER = DateTimeFormatter.ofPattern("dd-MM-yyyy_HH-mm");
     private static final Map<UUID, RecordingTracker> beingRecorded = new ConcurrentHashMap<>();
 
     public static void forEachTracker(java.util.function.Consumer<RecordingTracker> action) {
@@ -67,6 +67,6 @@ public class RecordingUtil {
     }
 
     public static String newReplayId(Player player) {
-        return String.format("%s|%s", player.getUniqueId(), LocalDateTime.now().format(FORMATTER));
+        return String.format("%s__%s", player.getUniqueId(), LocalDateTime.now().format(FORMATTER));
     }
 }
