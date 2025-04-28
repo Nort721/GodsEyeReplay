@@ -55,9 +55,6 @@ public class RecordingUtil {
 
         if (PluginsUtil.exists(PluginsUtil.ADVANCED_REPLAY)) {
             ReplayAPI.getInstance().stopReplay(tracker.getReplayId(), true);
-
-        } else if (PluginsUtil.exists(PluginsUtil.SHADOW_SNAP)) {
-            // ToDo implement shadowsnap support
         } else {
             GEReplay.getInstance().sendConsoleMessage("No replay plugin found, disabling GodsEyeReplay.");
             Bukkit.getPluginManager().disablePlugin(GEReplay.getInstance());
